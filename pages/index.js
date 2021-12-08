@@ -22,7 +22,7 @@ export default function Home() {
       </Head>
       <main className="intro">
         <h1 className="heading text-xl sm:text-3xl mt-10">
-          Hey, I'm  Nazeem.
+    {"Hey, I'm  Nazeem."}
         </h1>
         <p className="text-md text-gray-500 bg-blue mt-3">
           {

@@ -18,6 +18,11 @@ function Nav() {
                     Github
                 </a>
             </Link>
+            <Link href="mailto:n4ze3m@gmail.com">
+                <a>
+                 Mail
+                </a>
+            </Link>
         </nav>
     )
 }

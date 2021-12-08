@@ -28,10 +28,9 @@ header > a {
 }
 
 .body {
-  margin: 0px;
+  margin: 30px;
   padding: 0px;
   box-sizing: border-box;
-  margin-left: 70px;
   font-family: "Miller Text Rom", Georgia, Cambria, "Times New Roman", Times,
     serif;
   font-size: 18px;
@@ -75,4 +74,22 @@ footer > a {
   text-decoration: none;
   cursor: pointer;
   margin-right: 10px;
+}
+
+.loader {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  margin-left: 70px;
+  margin-top: 45px;
+  margin-bottom: 45px;
+  font-family: "Miller Text Rom", Georgia, Cambria, "Times New Roman", Times,
+    serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: rgb(93, 91, 91);
+}
+
+.loader > span {
+  max-height: max-content;
 }

@@ -11,14 +11,14 @@ export default function Home() {
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Full-Stack Web Developer | Muhammed Nazeem | Typescript, JavaScript, Go, Next.js, Node.js" />
         <meta property="og:description" content="Full-Stack Developer based in Kerala | Typescript, JavaScript, Go, Next.js, Node.js, Express.js, Postgres and more" />
-        <meta property="og:image" content="/meta.png" />
+        <meta property="og:image" content="/meta.jpg" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:domain" content="n4ze3m.site" />
         <meta property="twitter:url" content="https://n4ze3m.site/" />
         <meta name="twitter:title" content="Full-Stack Developer | Muhammed Nazeem | Golang, Typescript, Docker" />
         <meta name="twitter:description" content="Full-Stack Developer based in Kerala | Typescript, JavaScript, Go, Next.js, Node.js, Express.js, Postgres and more" />
-        <meta name="twitter:image" content="/meta.png" />
+        <meta name="twitter:image" content="/meta.jpg" />
       </Head>
       <main className="intro">
         <h1 className="heading text-xl sm:text-3xl mt-10">

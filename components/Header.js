@@ -4,7 +4,7 @@ function Header() {
     return (
         <header>
             <Link href="/">
-                <a>
+                <a className="gras text-3xl arcade">
                     Muhammed Nazeem
                 </a>
             </Link>

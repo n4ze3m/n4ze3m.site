@@ -21,13 +21,11 @@ export default function Home() {
         <meta name="twitter:image" content="/meta.jpg" />
       </Head>
       <main className="intro">
-        <h1 className="heading text-xl sm:text-3xl mt-10">
-    {"Hey, I'm  Nazeem."}
+        <h1 className="heading text-xl sm:text-3xl mt-10 neelde">
+          {"Hey, I'm  Nazeem."}
         </h1>
         <p className="text-md text-gray-500 bg-blue mt-3">
-          {
-            `I'm a full stack developer with over ${new Date().getFullYear() - 2019} years of experience. Experienced with all stages of the development cycle for web and mobile applications.`
-          }
+          A passionate Full-Stack Developer with a passion for building scalable and maintainable applications using the latest technologies
         </p>
         <div className="mt-6">
           <h1 className="font-bold uppercase text-md sm:text-lg">

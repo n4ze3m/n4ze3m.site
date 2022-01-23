@@ -1,10 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
+@font-face {
+  font-family: "arcade";
+  src: url("/ARCADECLASSIC.TTF") format("truetype");
+}
+
+@font-face {
+  font-family: "neelde";
+  src: url("/Needleteeth.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "saturno";
+  src: url("/saturno.ttf") format("truetype");
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: "Montserrat", sans-serif;
+  background-image: url("/1314202.jpg");
 }
 
 header {
@@ -62,7 +78,7 @@ h1.heading {
   font-weight: 400;
   display: block;
   margin-top: 30px;
-  width:85%;
+  width: 85%;
   height: auto;
 }
 
@@ -93,3 +109,33 @@ footer > a {
 .loader > span {
   max-height: max-content;
 }
+
+.arcade {
+  font-family: "arcade";
+}
+
+.neelde {
+  font-family: "neelde";
+  font-size: 80px;
+  color: #ff2941;
+}
+
+.neelde-no {
+  font-family: "neelde";
+  
+}
+
+.gras {
+  color: #871a85;
+}
+
+.yellow {
+  color: #feff38;
+}
+
+.saturno {
+  font-family: "saturno";
+  font-size: 20px;
+}
+
+ul, li {list-style-type: none;}

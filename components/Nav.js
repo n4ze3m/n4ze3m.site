@@ -4,22 +4,22 @@ function Nav() {
     return (
         <nav>
             <Link href="/">
-                <a>
+                <a className="yellow text-xl arcade">
                     Home
                 </a>
             </Link>
             <Link href="/projects">
-                <a>
+                <a className="yellow text-xl arcade">
                     Projects
                 </a>
             </Link>
             <Link href="https://github.com/nazeemnato">
-                <a>
+                <a className="yellow text-xl arcade">
                     Github
                 </a>
             </Link>
             <Link href="mailto:n4ze3m@gmail.com">
-                <a>
+                <a className="yellow text-xl arcade">
                  Mail
                 </a>
             </Link>

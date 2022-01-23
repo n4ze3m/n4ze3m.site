@@ -4,7 +4,7 @@ function Footer() {
     return (
         <div className="mt-4 border p-3" >
             {/* center copy right  */}
-            <div className="text-center text-sm ">
+            <div className="text-center text-sm arcade text-white">
                 <span> Muhammed Nazeem &copy; {new Date().getFullYear()} </span>
             </div>
             {/* social media links */}

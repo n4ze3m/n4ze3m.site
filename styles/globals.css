@@ -10,6 +10,11 @@
   src: url("/Needleteeth.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "saturno";
+  src: url("/saturno.ttf") format("truetype");
+}
+
 html,
 body {
   padding: 0;
@@ -122,3 +127,10 @@ footer > a {
 .yellow {
   color: #feff38;
 }
+
+.saturno {
+  font-family: "saturno";
+  font-size: 20px;
+}
+
+ul, li {list-style-type: none;}

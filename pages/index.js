@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Gif from "../components/Gif"
 
 export default function Home() {
   return (
@@ -24,32 +25,56 @@ export default function Home() {
         <h1 className="heading text-xl sm:text-3xl mt-10 neelde">
           {"Hey, I'm  Nazeem."}
         </h1>
-        <p className="text-md text-gray-500 bg-blue mt-3">
+        <p className="text-md text-white mt-3 saturno">
           A passionate Full-Stack Developer with a passion for building scalable and maintainable applications using the latest technologies
         </p>
         <div className="mt-6">
-          <h1 className="font-bold uppercase text-md sm:text-lg">
+          <h1 className="font-bold uppercase text-md sm:text-lg yellow arcade">
             Skills
           </h1>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-2 mt-4 mb-4" >
-            <li className="text-gray-500"> Golang</li>
-            <li className="text-gray-500"> JavaScript</li>
-            <li className="text-gray-500"> TypeScript</li>
-            <li className="text-gray-500"> Python</li>
-            <li className="text-gray-500"> Dart</li>
-            <li className="text-gray-500"> Solidity</li>
-            <li className="text-gray-500"> PHP</li>
-            <li className="text-gray-500"> Bash</li>
-            <li className="text-gray-500"> HTML</li>
-            <li className="text-gray-500"> C</li>
-            <li className="text-gray-500"> C++</li>
-            <li className="text-gray-500"> MySQL</li>
-            <li className="text-gray-500"> Postgres</li>
-            <li className="text-gray-500"> MongoDB</li>
-            <li className="text-gray-500"> Docker</li>
-            <li className="text-gray-500"> Kubernetes</li>
+            <li>
+              <Gif
+                url="https://c.tenor.com/rVkReKNBXmUAAAAC/vuongnhatbac-wangyibo.gif"
+              />
+            </li>
+            <li>
+              <Gif
+                url="https://c.tenor.com/MzJE99H8NLsAAAAM/js-javascript.gif"
+              />
+            </li>
+            <li>
+              <Gif
+                url="https://c.tenor.com/vOdTc2eO_UIAAAAd/typescript-death-glare.gif"
+              />
+            </li>
+            <li>
+              <Gif
+                url="https://c.tenor.com/fMUOPRVdSzUAAAAM/python.gif"
+              />
+            </li>
+            <li>
+              <Gif
+                url="https://c.tenor.com/PAupC4FagM0AAAAM/darts-target.gif"
+              />
+            </li>
+            <li>
+              <Gif
+                url="https://c.tenor.com/z3Vqx6hmE5QAAAAM/whale-docker.gif"
+              />
+            </li>
+            <li>
+              <Gif
+                url="https://c.tenor.com/aYGqQxV9yp4AAAAM/koob-cuddle.gif"
+              />
+            </li>
+            <li>
+              <Gif
+                url="https://c.tenor.com/yfRbDajBsC8AAAAM/spongebob-database.gif"
+              />
+            </li>
           </div>
-          <span className="text-gray-400 mt-4"> and more...</span>
+          <span className="text-white mt-4 arcade"> and more...</span>
         </div>
       </main>
     </div>

@@ -22,60 +22,13 @@ export default function Home() {
         <meta name="twitter:image" content="/meta.jpg" />
       </Head>
       <main className="intro">
-        <h1 className="heading text-xl sm:text-3xl mt-10 neelde">
-          {"Hey, I'm  Nazeem."}
+        <h1 className="text-xl font-bold mb-3">
+          Hello, my name is  Muhammed Nazeem
         </h1>
-        <p className="text-md text-white mt-3 saturno">
-          A passionate Full-Stack Developer with a passion for building scalable and maintainable applications using the latest technologies
+        <p className="text-md text-gray-500">
+          I am a full stack developer. My skills lie mainly in the backend, but I am also competent in frontend development. I am passionate about programming and love to solve problems. I have experience with a variety of programming languages and frameworks, and I'm always up for learning new.
         </p>
-        <div className="mt-6">
-          <h1 className="font-bold uppercase text-md sm:text-lg yellow arcade">
-            Skills
-          </h1>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-2 mt-4 mb-4" >
-            <li>
-              <Gif
-                url="https://c.tenor.com/rVkReKNBXmUAAAAC/vuongnhatbac-wangyibo.gif"
-              />
-            </li>
-            <li>
-              <Gif
-                url="https://c.tenor.com/MzJE99H8NLsAAAAM/js-javascript.gif"
-              />
-            </li>
-            <li>
-              <Gif
-                url="https://c.tenor.com/vOdTc2eO_UIAAAAd/typescript-death-glare.gif"
-              />
-            </li>
-            <li>
-              <Gif
-                url="https://c.tenor.com/fMUOPRVdSzUAAAAM/python.gif"
-              />
-            </li>
-            <li>
-              <Gif
-                url="https://c.tenor.com/PAupC4FagM0AAAAM/darts-target.gif"
-              />
-            </li>
-            <li>
-              <Gif
-                url="https://c.tenor.com/z3Vqx6hmE5QAAAAM/whale-docker.gif"
-              />
-            </li>
-            <li>
-              <Gif
-                url="https://c.tenor.com/aYGqQxV9yp4AAAAM/koob-cuddle.gif"
-              />
-            </li>
-            <li>
-              <Gif
-                url="https://c.tenor.com/yfRbDajBsC8AAAAM/spongebob-database.gif"
-              />
-            </li>
-          </div>
-          <span className="text-white mt-4 arcade"> and more...</span>
-        </div>
+
       </main>
     </div>
   )

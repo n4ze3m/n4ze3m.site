@@ -27,14 +27,17 @@ function MyApp({ Component, pageProps }) {
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
-      <Header />
-      <div className="body">
-        <Nav />
-        <div className="content">
+      <div className="flex flex-col h-screen justify-between body p-6">
+        <div>
+          <Nav />
+        </div>
+        <div className="mb-auto content">
           <Component {...pageProps} />
         </div>
+        <div className="h-10">
+          <Footer />
+        </div>
       </div>
-      <Footer />
     </>
   )
 }

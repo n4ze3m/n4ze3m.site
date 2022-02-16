@@ -2,13 +2,13 @@ import Link from "next/link"
 
 function Footer() {
     return (
-        <div className="mt-4 border p-3" >
+        <div className="mt-4 p-3" >
             {/* center copy right  */}
             <div className="text-center text-sm arcade text-white">
                 <span> Muhammed Nazeem &copy; {new Date().getFullYear()} </span>
             </div>
             {/* social media links */}
-            <div className="text-center text-sm mt-3 mb-3">
+            <div className="text-center text-sm mt-3">
                 <footer>
                     <Link href="https://linkedin.com/in/n4ze3m">
                         <a>

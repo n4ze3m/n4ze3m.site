@@ -4,23 +4,23 @@ function Nav() {
     return (
         <nav>
             <Link href="/">
-                <a className="yellow text-xl arcade">
+                <a className="text-gray-500 uppercase font-bold">
                     Home
                 </a>
             </Link>
             <Link href="/projects">
-                <a className="yellow text-xl arcade">
+                <a className="text-gray-500 uppercase font-bold">
                     Projects
                 </a>
             </Link>
             <Link href="https://github.com/nazeemnato">
-                <a className="yellow text-xl arcade">
+                <a className="text-gray-500 uppercase font-bold">
                     Github
                 </a>
             </Link>
             <Link href="mailto:n4ze3m@gmail.com">
-                <a className="yellow text-xl arcade">
-                 Mail
+                <a className="text-gray-500 uppercase font-bold">
+                    Mail
                 </a>
             </Link>
         </nav>

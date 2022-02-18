@@ -1,23 +1,58 @@
-import Link from 'next/link'
 
 function Project({ data }) {
-    const url = data?.demo_url || data?.github_url
+
+    const subHeading = (d) => {
+        const github = d?.githubUrl
+        const demo = d?.demoUrl
+
+        if (github && demo) {
+            return (
+                <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
+                    <a href={github} target="_blank" rel="noopener noreferrer"> Source Code </a>
+                    <span className="text-indigo-500 text-xs font-medium title-font"> | </span>
+                    <a href={demo} target="_blank" rel="noopener noreferrer"> Live Demo </a>
+                </h3>
+            )
+        } else if (github && !demo) {
+            return (
+                <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
+                    <a href={github} target="_blank" rel="noopener noreferrer"> Source Code </a>
+                </h3>
+            )
+        } else if (!github && demo) {
+            return (
+                <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
+                    <a href={demo} target="_blank" rel="noopener noreferrer"> Live Demo </a>
+                </h3>
+            )
+        } else {
+            return (
+                <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
+                    No Links Available
+                </h3>
+            )
+        }
+    }
+
     return (
-        <div className="group w-full sm:w-1/2 m-4 mx-auto p-6 rounded-xl border-2 border-white">
-            <Link href={url}>
-                <a>
-                    <div className="flex flex-row space-x-2">
-                        <h1 className="text-xl text-center font-bold text-white">
-                            {data.name}
-                        </h1>
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                        </svg>
-                    </div>
-                </a>
-            </Link>
-            <hr className="my-4" />
-            <p className="text-white">{data.description}</p>
+        <div className="xl:w-1/3 md:w-1/2 p-4">
+            <div className="bg-white rounded shadow overflow-hidden">
+                <img className="lg:h-60 xl:h-56 md:h-64 sm:h-72 xs:h-72 h-72 rounded w-full  object-center mb-6" src={data?.imageUrl} alt="Project screenshot" />
+                <div className="p-3">
+                    <h2 className="text-lg text-gray-900 font-bold mb-4">{
+                        data?.title
+                    }</h2>
+                    {subHeading(data)}
+                    <p className="leading-relaxed text-base mb-3">
+                        {
+                            data?.description
+                        }
+                    </p>
+                    {
+                        data?.tags.split(',').map((tag) => <span key={tag} className="text-sm font-medium bg-gray-200 py-1 px-2 rounded text-black align-middle mr-3">{tag}</span>)
+                    }
+                </div>
+            </div>
         </div>
     )
 }

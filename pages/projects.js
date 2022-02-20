@@ -23,6 +23,9 @@ function Projects() {
             <h1 className="font-bold text-2xl tracking-tight mb-4 text-black">
                 Projects
             </h1>
+            <p>
+                Some of my favorite projects I build in my free time. Rest of the projects are available on <a href="https://github.com/nazeemnato" className="git-a">My Github profile </a>
+            </p>
             {
                 loading && (
                     <div>Loading...</div>
@@ -35,7 +38,7 @@ function Projects() {
             }
             {
                 data && (
-                    <div className="container px-5 py-24 mx-auto max-w-7x1">
+                    <div className="container  py-14 mx-auto max-w-7x1">
                         <div className="flex flex-wrap -m-4">
                             {
                                 data?.project.map(p => (

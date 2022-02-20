@@ -4,7 +4,7 @@ import {
 
 export const GET_PROJECTS = gql`
 query {
-    project{
+    project(orderBy:createdAt_DESC){
       id
       title
       description

@@ -37,7 +37,7 @@ function Project({ data }) {
     return (
         <div className="xl:w-1/3 md:w-1/2 p-4">
             <div className="bg-white rounded shadow overflow-hidden">
-                <img className="lg:h-60 xl:h-56 md:h-64 sm:h-72 xs:h-72 h-72 rounded w-full  object-center mb-6" src={data?.imageUrl} alt="Project screenshot" />
+                <img className="h-60 rounded w-full  object-center mb-6" src={data?.imageUrl} alt="Project screenshot" />
                 <div className="p-3">
                     <h2 className="text-lg text-gray-900 font-bold mb-4">{
                         data?.title

@@ -13,7 +13,7 @@ function Nav() {
                     Projects
                 </a>
             </Link>
-            <Link href="https://github.com/nazeemnato">
+            <Link href="https://github.com/n4ze3m">
                 <a className="text-gray-500 uppercase font-bold">
                     Github
                 </a>

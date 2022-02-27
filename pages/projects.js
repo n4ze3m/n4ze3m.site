@@ -24,7 +24,7 @@ function Projects() {
                 Projects
             </h1>
             <p>
-                Some of my favorite projects I build in my free time. Rest of the projects are available on <a href="https://github.com/nazeemnato" className="git-a">My Github profile </a>
+                Some of my favorite projects I build in my free time. Rest of the projects are available on <a href="https://github.com/n4ze3m" className="git-a">My Github profile </a>
             </p>
             {
                 loading && (

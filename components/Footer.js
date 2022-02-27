@@ -36,6 +36,11 @@ function Footer() {
                             Instagram
                         </a>
                     </Link>
+                    <Link href="https://work.n4ze3m.site/">
+                        <a className="text-gray-500 hover:text-gray-600 transition">
+                            Polywork
+                        </a>
+                    </Link>
                 </div>
             </div>
             <div className=" w-full max-w-2xl text-center text-sm text-gray-500 mb-3">

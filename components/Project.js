@@ -43,13 +43,13 @@ function Project({ data }) {
                         data?.title
                     }</h2>
                     {subHeading(data)}
-                    <p className="leading-relaxed text-base mb-3">
-                        {
-                            data?.description
-                        }
-                    </p>
+                    <p className="text-gray-700 leading-relaxed text-base mb-4">{
+                        data?.description
+                    }</p>
                     {
-                        data?.tags.split(',').map((tag) => <span key={tag} className="text-sm font-medium bg-gray-200 py-1 px-2 rounded text-black align-middle mr-3 ">{tag}</span>)
+                        data?.tags.split(',').map((tag) =>
+                            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{tag}</span>
+                        )
                     }
                 </div>
             </div>

@@ -49,7 +49,7 @@ function Project({ data }) {
                         }
                     </p>
                     {
-                        data?.tags.split(',').map((tag) => <span key={tag} className="text-sm font-medium bg-gray-200 py-1 px-2 rounded text-black align-middle mr-3">{tag}</span>)
+                        data?.tags.split(',').map((tag) => <span key={tag} className="text-sm font-medium bg-gray-200 py-1 px-2 rounded text-black align-middle mr-3 ">{tag}</span>)
                     }
                 </div>
             </div>

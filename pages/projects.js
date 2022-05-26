@@ -41,13 +41,23 @@ function Projects({ data }) {
 
 // load data from getStaticProps
 export async function getStaticProps() {
-    const { data } = await client.query({
-        query: GET_PROJECTS
-    })
-
-    return {
-        props: {
-            data
+    try {
+        const { data } = await client.query({
+            query: GET_PROJECTS
+        })
+    
+        return {
+            props: {
+                data
+            },
+            revalidate: 10 
+        }
+    }catch(e) {
+        return {
+            props: {
+                data: []
+            },
+            revalidate: 10 
         }
     }
 }

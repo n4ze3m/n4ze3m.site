@@ -3,16 +3,9 @@ import { useState, useEffect } from 'react'
 import Project from '../components/Project'
 import Meta from '../components/Meta'
 import { GET_PROJECTS } from "../graphql/query"
-import {
-    useQuery,
-} from "@apollo/client";
-function Projects() {
+import client from '../graphql/client'
 
-    const {
-        data,
-        loading,
-        error
-    } = useQuery(GET_PROJECTS)
+function Projects({ data }) {
 
     return (
         <>
@@ -26,16 +19,6 @@ function Projects() {
             <p>
                 Some of my favorite projects I build in my free time. Rest of the projects are available on <a href="https://github.com/n4ze3m" className="git-a">My Github profile </a>
             </p>
-            {
-                loading && (
-                    <div>Loading...</div>
-                )
-            }
-            {
-                error && (
-                    <div>Error!</div>
-                )
-            }
             {
                 data && (
                     <div className="container  py-14 mx-auto max-w-7x1">
@@ -56,4 +39,18 @@ function Projects() {
     )
 }
 
+// load data from getStaticProps
+export async function getStaticProps() {
+    const { data } = await client.query({
+        query: GET_PROJECTS
+    })
+
+    return {
+        props: {
+            data
+        }
+    }
+}
+
 export default Projects
+
